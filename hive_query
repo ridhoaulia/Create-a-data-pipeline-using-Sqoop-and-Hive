@@ -1,0 +1,22 @@
+CREATE EXTERNAL TABLE IF NOT EXISTS public.retail (
+	Id INT,
+	Nomor_Retail STRING,
+	Is_Website STRING,
+	Kode_Organisasi STRING ,
+	Kode_Div STRING ,
+	Kode_Unit STRING ,
+	Mutu STRING ,
+	Spesifikasi STRING ,
+	Volume_Penjualan DOUBLE ,
+	Nama_Proyek STRING ,
+	Retail_Method STRING ,
+	Kota STRING ,
+	Plant_Utama STRING ,
+	Street STRING ,
+	Street2 STRING ,
+	Tanggal_Mulai_Kontrak STRING 
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+location '/user/hdfs/wondermart';
